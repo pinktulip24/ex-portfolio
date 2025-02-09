@@ -1,0 +1,126 @@
+/***DASHBOARD***/
+.dashboard {
+  margin-top: 32px;
+  margin-bottom: 30px;
+  &__inner {
+    @include column-flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    line-height: 10px;
+    gap: 24px;
+    &--second-subtitle {
+      font-weight: 500;
+      font-size: 26px;
+      &-subtitle2 {
+        font-weight: 500;
+        font-size: 20px;
+      }
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    width: 339px;
+    height: 80px;
+    margin: 0;
+  }
+  &__img {
+    width: 339px;
+    height: 256px;
+    cursor: pointer;
+  }
+  &__details {
+    @include row-flex;
+    align-items: center;
+    gap: 15px;
+    @include noMargin;
+    &--date {
+      font-weight: 900;
+      font-size: 18px;
+      text-align: center;
+      color: var(--white-color);
+      background-color: var(--second-color);
+      padding: 0 10px;
+      border-radius: 15px;
+      line-height: 29px;
+      align-self: flex-start;
+    }
+    &--keyword {
+      font-size: 18px;
+      line-height: 29px;
+      flex-wrap: wrap;
+      max-width: 262px;
+    }
+    &--msg {
+      line-height: 24px;
+      color: var(--black-color);
+      width: 339px;
+      height: 96px;
+      margin: 0;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .dashboard {
+    margin-top: 78px;
+    margin-bottom: 27px;
+    &__inner {
+      gap: 27px;
+      &--second {
+        margin-bottom: -27px;
+        &-subtitle {
+          padding-bottom: 10px;
+          font-size: 30px;
+        }
+        &-subtitle2 {
+          font-size: 24px;
+          line-height: 60px;
+          margin-bottom: 0;
+        }
+      }
+    }
+    &__title {
+      font-size: 34px;
+      line-height: 50px;
+      max-width: 506px;
+      height: 100px;
+    }
+    &__img {
+      width: 681px;
+      height: 460px;
+    }
+    &__details {
+      gap: 17px;
+      &--date {
+        font-size: 20px;
+        line-height: 29px;
+      }
+      &--keyword {
+        font-size: 20px;
+        line-height: 29px;
+        flex-wrap: wrap;
+        max-width: 374px;
+      }
+      &--msg {
+        width: 675px;
+        height: 44px;
+      }
+    }
+  }
+  #dashboard_img {
+    margin-top: 23px;
+    margin-bottom: 31px;
+  }
+}
+@media (min-width: 1200px) {
+  .dashboard {
+    &__title {
+      width: 720px;
+    }
+    &__details--msg {
+      width: 840px;
+    }
+  }
+}

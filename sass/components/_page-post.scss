@@ -1,0 +1,122 @@
+/***POST**/
+.post {
+  &__section {
+    background-color: var(--post-color);
+    &__inner {
+      padding-bottom: 38px;
+    }
+    &__details--link {
+      display: none;
+    }
+  }
+  &__list {
+    @include column-flex;
+    @include noMargin;
+    @include center;
+    gap: 17px;
+    &__item {
+      flex-grow: 0;
+      flex-shrink: 1;
+      text-align: left;
+      background-color: var(--white-color);
+      box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+      border-radius: 4px;
+      padding: 12px 21px 22px 19px;
+      h5 {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 30px;
+        height: 60px;
+        margin: 0;
+        cursor: pointer;
+      }
+      &--date {
+        @include row-flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 24px;
+        line-height: 24px;
+        margin: 0;
+        padding: 12px 0 17px 0;
+        svg {
+          height: 21px;
+          width: 3px;
+          stroke: var(--black-color);
+        }
+      }
+      &--message {
+        line-height: 24px;
+        height: 117px;
+        margin: 0;
+        color: var(--primary-color);
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .post {
+    &__section {
+      &__inner {
+        @include column-flex;
+        @include center;
+        padding-bottom: 32px;
+        width: var(--width-max);
+      }
+      &__details {
+        @include row-flex;
+        justify-content: space-between;
+        align-items: center;
+        width: var(--width-max);
+        &--link {
+          display: block;
+          line-height: 24px;
+          color: var(--link-color);
+          &:hover,
+          &:focus {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    &__list {
+      @include row-flex;
+      gap: 20px;
+      &__item {
+        padding: 24px 21px 7px 23px;
+        h5 {
+          font-size: 26px;
+          line-height: 30px;
+          max-height: 85px;
+        }
+        &--date {
+          gap: 26px;
+          font-size: 18px;
+          line-height: 26px;
+          margin-bottom: -4px;
+        }
+        &--message {
+          max-height: 117px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .post {
+    &__section__details {
+      width: var(--width-max);
+    }
+    &__list {
+      width: var(--width-max);
+      &__item {
+        h5 {
+          height: auto;
+        }
+        &--message {
+          width: var(--width-max);
+        }
+      }
+    }
+  }
+}

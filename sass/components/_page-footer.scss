@@ -1,0 +1,44 @@
+/***FOOTER***/
+.page__footer {
+  padding-top: 51px;
+  padding-bottom: 54px;
+  &__copyright {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: var(--primary-color);
+    margin: 0;
+    padding-top: 26px;
+  }
+}
+.team__social__list {
+  @include center;
+  padding: 0;
+  &__inner {
+    @include row-flex;
+    flex-wrap: nowrap;
+    @include center;
+    margin: 0;
+    gap: 35px;
+  }
+  &--link {
+    @include row-flex;
+    @include center;
+    width: 44px;
+    height: 44px;
+    fill: var(--primary-color);
+    &:hover,
+    &:focus {
+      transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      border-radius: 50%;
+      background-color: var(--second-color);
+      fill: var(--white-color);
+    }
+    &-icon {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

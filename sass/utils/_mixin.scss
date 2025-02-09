@@ -1,0 +1,29 @@
+
+@mixin column-flex {
+  display: flex;
+  flex-direction: column;
+}
+@mixin row-flex {
+  display: flex;
+  flex-direction: row;
+}
+@mixin noMargin {
+  margin: 0;
+  padding: 0;
+}
+@mixin section_title {
+  font-weight: 700;
+  font-size: 30px;
+}
+@mixin menu-styles {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+  }
+@mixin center {
+  justify-content: center;
+  align-items: center;
+}
+@mixin hover {
+  color: var(--second-color);
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio</title>
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--HEADER-->
+  <header class="header container">
+    <button class="menu__toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          clip-rule="evenodd"></path>
+      </svg>
+    </button>
+    <nav>
+      <ul class="menu container--unstyled-list">
+        <li class="menu__item"><a href="index.html" class="menu__item--link container--link">Home</a></li>
+        <li class="menu__item"><a href="blog.html" class="menu__item--link container--link">Blog</a></li>
+        <li class="menu__item"><a href="work.html"
+            class="menu__item--link container--link menu__item--link--selected">Works</a></li>
+        <li class="menu__item"><a href="dashboard.html" class="menu__item--link container--link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--MAIN-->
+  <main>
+    <section class="dashboard container">
+      <div class="dashboard__inner">
+        <h3 class="dashboard__title"> Designing Dashboards with usability in mind</h3>
+        <p class="dashboard__details">
+          <span class="dashboard__details--date">2020</span>
+          <span class="dashboard__details--keyword">Dashboard, User Experience Design</span>
+        </p>
+        <p class="dashboard__details--msg">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+        <img class="dashboard__img" srcset="
+              ./images/image5-sm.jpg     339w,
+              ./images/image5-sm@2x.jpg  678w,
+              ./images/image5-xl.jpg     681w,
+              ./images/image5-xl@2x.jpg 1362w
+            " src="./images/image5-sm.jpg" sizes="(min-width: 1200px) 681px, (min-width: 768px) 339px"
+          alt="dashboard designing" id="dashboard_img">
+        <div class="dashboard__inner--second">
+          <h3 class="dashboard__inner--second-subtitle">Heading 1</h3>
+          <h4 class="dashboard__inner--second-subtitle2">Heading 2</h4>
+        </div>
+        <p class="dashboard__details--msg">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+
+        <img class="dashboard__img" srcset="
+              ./images/image6-sm.jpg     339w,
+              ./images/image6-sm@2x.jpg  678w,
+              ./images/image6-xl.jpg     681w,
+              ./images/image6-xl@2x.jpg 1362w
+            " src="./images/image6-sm.jpg" sizes="(min-width: 1200px) 681px, (min-width: 768px) 339px" alt="car">
+
+        <img class="dashboard__img" srcset="
+              ./images/image7-sm.jpg     339w,
+              ./images/image7-sm@2x.jpg  678w,
+              ./images/image7-xl.jpg     681w,
+              ./images/image7-xl@2x.jpg 1362w
+            " src="./images/image7-xl.jpg" sizes="(min-width: 1200px) 681px, (min-width: 768px) 339px" alt="menu">
+      </div>
+    </section>
+  </main>
+  <!--FOOTER-->
+  <footer class="page__footer container" id="footer">
+    <ul class="team__social__list team__social__list__inner container--unstyled-list">
+      <li>
+        <a href="https://facebook.com" target="_blank" class="team__social__list--link">
+          <svg class="team__social__list--link-icon">
+            <use href="./images/icons.svg#icon_facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://instagram.com" target="_blank" class="team__social__list--link">
+          <svg class="team__social__list--link-icon">
+            <use href="./images/icons.svg#icon_instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com" target="_blank" class="team__social__list--link">
+          <svg class="team__social__list--link-icon">
+            <use href="./images/icons.svg#icon_twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://ro.linkedin.com/" target="_blank" class="team__social__list--link">
+          <svg class="team__social__list--link-icon">
+            <use href="./images/icons.svg#icon_linkedin"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <p class="page__footer__copyright">
+      Copyright &#169;2020 All rights reserved.
+    </p>
+  </footer>
+  <!--MOBILE-MENU-->
+  <div class="menu__container js-menu-container" id="mobile-menu">
+    <button class="menu__toggle js-close-menu">
+      <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+        <path fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"></path>
+      </svg>
+    </button>
+    <ul class="menu__mobile container--unstyled-list">
+      <li class="menu__mobile__item"><a href="index.html" class="menu__mobile__item--link container--link">Home</a></li>
+      <li class="menu__mobile__item"><a href="blog.html" class="menu__mobile__item--link container--link">Blog</a></li>
+      <li class="menu__mobile__item"><a href="work.html"
+          class="menu__mobile__item--link container--link menu__item--link--selected">Works</a></li>
+      <li class="menu__mobile__item"><a href="dashboard.html"
+          class="menu__mobile__item--link container--link">Contact</a></li>
+    </ul>
+  </div>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="js/mobile-menu.js"></script>
+</body>
+
+</html>
